@@ -278,7 +278,7 @@ footer a:hover {
     color: #666;
 }
 
-.certificate-thumbnail {
+.certificate-thumbnail { 
     width: 140px;
     border-radius: 8px;
     cursor: pointer;
