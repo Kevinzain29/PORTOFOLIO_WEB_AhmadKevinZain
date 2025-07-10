@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* transparan */
+    backdrop-filter: blur(10px);     /* efek blur */
+    z-index: 1000;
+    padding: 10px 0;
+    transition: background 0.3s ease;
+}
+
+nav a {
+    color: white;
+    padding: 12px 18px;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, background 0.3s ease;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #00d4ff; /* aksen biru neon */
+}
+
+.hover-title,
+.hover-subtitle {
+    transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.hover-title:hover,
+.hover-subtitle:hover {
+    color: #00d4ff;         /* warna aksen saat hover */
+    transform: scale(1.1);  /* efek membesar sedikit */
+}
+    
+section {
+    padding: 40px;
+    margin: auto;
+}
+.full-width-section {
+    background-color: rgb(244, 240, 240);
+    width: 100%;
+}
+.section-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 150px;
+}
+
+.cv-button {
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: linear-gradient(45deg, #00d4ff, #0084ff);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cv-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#about {
+    background-color: whitesmoke; 
+}
+.about img {
+    width: 200px;
+    border-radius: 5%;
+}
+#about, #skills {
+    min-height: 650px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 22px;
+    border-radius: 8px;
+    transition: transform 0.2s, background 0.2s;
+    font-size: 1.5rem;
+}
+.skill-item:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+}
+.skill-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+#skills {
+    background-color: white; 
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+}
+.contact-icons a {
+    color: #333;
+    text-decoration: none;
+}
+.contact-icons a:hover {
+    color: #555;
+}
+footer {
+    background-color: #111; /* lebih gelap */
+    color: #ccc;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.95rem;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #ccc;
+    margin: 0 8px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00d4ff; /* aksen */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+.card {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}   
+
+.card p {
+    text-align: center;
+    color: #666;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;              /* seragam tinggi gambar */
+    object-fit: cover;          /* crop gambar rapi */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;            /* tunjukkan gambar bisa diklik */
+}
+
+.card button {
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+    padding: 10px 0;
+    background: linear-gradient(45deg, #00d4ff, #0084ff);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#achievements {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+#achievements h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.achievement-card {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    transition: transform 0.4s, box-shadow 0.4s;
+    overflow: hidden;
+}
+
+.achievement-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.achievement-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    gap: 40px;
+    flex-wrap: wrap; /* agar responsif di mobile */
+}
+
+.achievement-content div {
+    flex: 1;
+}
+
+.achievement-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.achievement-content p {
+    color: #666;
+}
+
+.certificate-thumbnail {
+    width: 140px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.certificate-thumbnail:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+#contact {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00d4ff;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-size: 40px;
+}
+
+.contact-icons a {
+    color: #ccc;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #00d4ff;
+    transform: scale(1.2);
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
+}
+
+.about img {
+    width: 200px;
+    border-radius: 5%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .section-content {
+        padding: 80px 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        width: 150px;
+    }
+    
+    .achievement-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .certificate-thumbnail {
+        width: 80%;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header div h1 {
+        font-size: 1.6rem;
+    }
+    header div p {
+        font-size: 1rem;
+    }
+    .card h3 {
+        font-size: 1.2rem;
+    }
+    .card p {
+        font-size: 0.9rem;
+    }
+    .card button {
+        font-size: 0.9rem;
+    }
+    .skill-item {
+        font-size: 1.1rem;
+    }
+}
+
+
+

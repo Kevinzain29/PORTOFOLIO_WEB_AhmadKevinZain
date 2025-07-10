@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"/>
+    <!-- AOS Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <header id="home" style="height: 100vh; position: relative;">
+    <div style="position: relative; z-index: 1; text-align: center; padding: 340px 20px; color: white;">
+        <h1 class="hover-title">Hello, I'm Ahmad Kevin Zain :)</h1>
+        <p class="hover-subtitle">Information Technology Student | Front End Developer</p>
+        <button class="cv-button" onclick="window.open('/asset/CV_AhmadKevinZain.pdf', '_blank')">View My CV</button>
+    </div>
+    </header>
+
+
+    <section id="about" class="full-width-section" data-aos="fade-right">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <div class="about">
+                <img src="/asset/Kevin.png" alt="Foto Saya">
+                <p>Saya adalah mahasiswa semester 6 Program Studi Teknologi Informasi, Fakultas Teknik, Universitas Muhammadiyah Yogyakarta. Saya memiliki ketertarikan dan keahlian di bidang pemrograman, khususnya dalam pengembangan antarmuka pengguna (front-end development).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" data-aos="fade-left" style="background-color: #111; color: #ccc; padding: 50px 20px; font-family: sans-serif;">
+    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 30px;">⭐ My Skill</h2>
+
+    <div style="display: grid; grid-template-columns: 1fr 3fr; gap: 20px; max-width: 1000px; margin: auto;">
+        <!-- Frontend -->
+        <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Frontend</h3>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">HTML</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-icon">CSS</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">JavaScript</div>
+            <div class="skill-item"><img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap" class="skill-icon">Bootstrap</div>
+        </div>
+
+        <!-- Backend -->
+        <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Backend</h3>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="skill-icon">Spring Boot</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="ExpressJS" class="skill-icon">Express.js</div>
+            <div class="skill-item"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel" class="skill-icon">Laravel</div>
+
+        </div>
+
+        <!-- Programming Languages -->
+        <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Languages</h3>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="skill-icon">C#</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="skill-icon">C++</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-icon">Java</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" class="skill-icon">Kotlin</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="skill-icon">PHP</div>
+        </div>
+
+        <!-- Database & Tools -->
+        <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Technologies</h3>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon">MySQL</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" class="skill-icon">Firebase</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" class="skill-icon">Postman</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode" class="skill-icon">VSCode</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon">Git</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="skill-icon">Docker</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="skill-icon">GitHub</div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="skill-icon">Figma</div>
+        </div>
+    </div>
+</section>
+
+    <section id="projects" data-aos="fade-up">
+        <h2 style="text-align: center; font-size: 2.5rem;">Projects</h2>
+        <div class="project-grid">
+            <div class="card">
+                <a href="https://kevinzain29.github.io/UCP2-3/" target="_blank">
+                    <img src="/asset/project 1_ALL.jpeg" alt="Project 1">
+                </a>
+                <h3>Project front-end</h3>
+                <p>Project Akhir mata kuliah pengembangan Desain Web semester 4</p>
+                <button onclick="window.open('https://github.com/Kevinzain29/UCP2-3.git')">View Source Code</button>
+            </div>
+            <div class="card">
+                <a href="https://kevinzain29.github.io/PDW8_20220140130/" target="_blank">
+                    <img src="/asset/project 2_All.jpeg" alt="Project 2">
+                </a>
+                <h3>Project front-end</h3>
+                <p>Project mata kuliah pengembangan Desain Web semester 4</p>
+                <button onclick="window.open('https://github.com/Kevinzain29/PDW8_20220140130.git')">View Source Code</button>
+            </div>
+            <div class="card">
+                <a href="https://kevinzain29.github.io/exercise2_130/" target="_blank">
+                    <img src="/asset/project 3.jpeg" alt="Project 3">
+                </a>
+                <h3>Project front-end</h3>
+                <p>Project mata kuliah pengembangan Desain Web semester 4</p>
+                <button onclick="window.open('https://github.com/Kevinzain29/exercise2_130.git')">View Source Code</button>
+            </div>
+            <div class="card">
+                <a href="https://kevinzain29.github.io/UCP1_PDW_20220140130/" target="_blank">
+                    <img src="/asset/project 4.jpeg" alt="Project 4">
+                </a>
+                <h3>Project front-end</h3>
+                <p>Project mata kuliah pengembangan Desain Web semester 4</p>
+                <button onclick="window.open('https://github.com/Kevinzain29/UCP1_PDW_20220140130.git')">View Source Code</button>
+            </div>
+            <div class="card">
+                <a href="https://kevinzain29.github.io/PDW7_20220140130/" target="_blank">
+                    <img src="/asset/project 5.jpeg" alt="Project 5">
+                </a>               
+                <h3>Project front-end</h3>
+                <p>Project mata kuliah pengembangan Desain Web semester 4</p>
+                <button onclick="window.open('https://github.com/Kevinzain29/PDW7_20220140130.git')">View Source Code</button>
+            </div>
+            <div class="card">
+                <a href="https://kevinzain29.github.io/PDW9_20220140130/" target="_blank">
+                    <img src="/asset/project 6.jpeg" alt="Project 6">
+                </a>               
+                <h3>Project front-end</h3>
+                <p>Project mata kuliah pengembangan Desain Web semester 4</p>
+                <button onclick="window.open('https://github.com/Kevinzain29/PDW9_20220140130.git')">View Source Code</button>
+            </div>
+            <div class="card">
+                <a href="https://kevinzain29.github.io/Kevinzain29-20220140130_exercise_pdw1/" target="_blank">
+                    <img src="/asset/project 7.jpeg" alt="Project 7">
+                </a>
+                <h3>Project front-end</h3>
+                <p>Project mata kuliah pengembangan Desain Web semester 4</p>
+                <button onclick="window.open('https://github.com/Kevinzain29/Kevinzain29-20220140130_exercise_pdw1.git')">View Source Code</button>
+            </div>
+            <div class="card">
+                <a href="https://kevinzain29.github.io/tugasmandiri_130/" target="_blank">
+                    <img src="/asset/project 8.jpeg" alt="Project 8">
+                </a>               
+                <h3>Project front-end</h3>
+                <p>Project mata kuliah pengembangan Desain Web semester 4</p>
+                <button onclick="window.open('https://github.com/Kevinzain29/tugasmandiri_130.git')">View Source Code</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements and Certificates</h2>
+        <div class="card achievement-card">
+            <div class="achievement-content">
+                <div>
+                    <h3>Sertifikat Dasar Pemrograman Web</h3>
+                    <p>Diberikan oleh: Dicoding Indonesia</p>
+                </div>
+                <img src="/asset/sertifDicoding.png" alt="Sertifikat Web Dev" class="certificate-thumbnail">
+            </div>
+        </div>
+        <div class="card achievement-card">
+            <div class="achievement-content">
+                <div>
+                    <h3>Sertifikat Data Visualization</h3>
+                    <p>Diberikan oleh: MySkill</p>
+                </div>
+                <img src="/asset/sertif2.png" alt="Sertifikat JS Mastery" class="certificate-thumbnail">
+            </div>
+        </div>
+                <div class="card achievement-card">
+            <div class="achievement-content">
+                <div>
+                    <h3>Sertifikat Wordpress Introduction</h3>
+                    <p>Diberikan oleh: MySkill</p>
+                </div>
+                <img src="/asset/sertif3.png" alt="Sertifikat JS Mastery" class="certificate-thumbnail">
+            </div>
+        </div>
+                <div class="card achievement-card">
+            <div class="achievement-content">
+                <div>
+                    <h3>Sertifikat Microsoft Excel Basic</h3>
+                    <p>Diberikan oleh: MySkill</p>
+                </div>
+                <img src="/asset/sertif4.png" alt="Sertifikat JS Mastery" class="certificate-thumbnail">
+            </div>
+        </div>
+                <div class="card achievement-card">
+            <div class="achievement-content">
+                <div>
+                    <h3>Sertifikat Logo Design</h3>
+                    <p>Diberikan oleh: MySkill</p>
+                </div>
+                <img src="/asset/sertif5.png" alt="Sertifikat JS Mastery" class="certificate-thumbnail">
+            </div>
+        </div>
+    </section>
+                    <div class="card achievement-card">
+            <div class="achievement-content">
+                <div>
+                    <h3>Sertifikat Explore Azure</h3>
+                    <p>Diberikan oleh: Microsoft</p>
+                </div>
+                <img src="/asset/sertif6.png" alt="Sertifikat JS Mastery" class="certificate-thumbnail">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact</h2>
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/kevinzain._/"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/6283141587759"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/Kevinzain29" target="https://github.com/Kevinzain29"><i class="fab fa-github"></i></a>
+            <a href="https://www.google.com/search?sca_esv=684acc15502572cd&sxsrf=AE3TifOcRaaOi_euORheRuzH0iqfy7J5Lg:1751656796511&q=free+palestine&source=lnms&fbs=AIIjpHwYjheWzLTV2dQNp_nQu5KcTXlp8bWhDjoSqoegSPuLwLmFfnSPIdy8a-lXMgp1IVu00l34F9oMUxpfLLgMOaZJH7U-74qZmQmvlckaLH0U9PTltYi4k_A8l8LIqtnKsOHBjurfKQ7KLVQ3I1SSNrjilFNcouhu0ptlj6O6z6_l642NFB7u8OaU49EpUTuOpETqcol6LfNo1W8cI2evSRapI9yHfrJw1L1qSXB2a3Cpbr3cDK8&sa=X&ved=2ahUKEwjPmv-I9qOOAxXDxzgGHS9FER8Q0pQJKAB6BAgTEAE&biw=1440&bih=812&dpr=2"><i class="fab fa-google"></i></a> 
+
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Ahmad Kevin Zain
+    </footer>
+    <!-- Modal untuk menampilkan gambar ukuran asli -->
+    <div id="imgModal" style="
+        display:none; 
+        position:fixed; 
+        top:0; left:0; 
+        width:100%; height:100%; 
+        background-color: rgba(0,0,0,0.8); 
+        justify-content: center; 
+        align-items: center; 
+        z-index: 9999;">
+        <span onclick="closeModal()" style="
+            position:absolute; 
+            top:30px; right:50px; 
+            color:white; 
+            font-size:40px; 
+            cursor:pointer;">&times;</span>
+        <img id="modalImage" src="" style="
+            max-width:90%; 
+            max-height:90%; 
+            border-radius:8px;">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script>
+    VANTA.NET({
+        el: "header",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x00d4ff,    // warna garis
+        backgroundColor: 0x000000  // warna latar belakang
+    })
+    //animasi background
+</script>
+</body>
+</html>
