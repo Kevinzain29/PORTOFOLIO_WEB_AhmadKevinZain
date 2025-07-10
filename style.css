@@ -374,24 +374,109 @@ footer a:hover {
 
 @media screen and (max-width: 480px) {
     header div h1 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
+
     header div p {
         font-size: 1rem;
     }
+
+    .cv-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 0;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
+
+    .section-content {
+        padding: 60px 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        width: 140px;
+    }
+
+    .skill-item {
+        font-size: 1rem;
+        padding: 8px 14px;
+        flex: 1 1 40%;
+        justify-content: center;
+    }
+
+    .skill-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin: 15px auto;
+    }
+
     .card h3 {
         font-size: 1.2rem;
     }
+
     .card p {
         font-size: 0.9rem;
     }
+
     .card button {
         font-size: 0.9rem;
+        padding: 8px 0;
     }
-    .skill-item {
-        font-size: 1.1rem;
+
+    .achievement-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .certificate-thumbnail {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact-icons {
+        gap: 25px;
+        font-size: 28px;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        font-size: 0.85rem;
+        padding: 15px;
+    }
+
+    .blur-divider {
+        height: 40px;
     }
 }
+
+
 
 
 
