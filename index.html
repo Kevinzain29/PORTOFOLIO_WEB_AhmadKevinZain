@@ -17,20 +17,28 @@
 </head>
 <body>
     <nav>
+    <div class="nav-container">
+        <div class="logo" style="color: #00d4ff;">My Portfolio</div>
+        <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#achievements">Achievements</a>
         <a href="#contact">Contact</a>
+        </div>
+    </div>
     </nav>
     
     <header id="home" style="min-height: 100vh; position: relative; overflow: hidden;">
-    <div style="position: relative; z-index: 1; text-align: center; padding: 340px 20px; color: white;">
-        <h1 class="hover-title">Hello, I'm Ahmad Kevin Zain</h1>
-        <p class="hover-subtitle">Information Technology Student | Front End Developer</p>
-        <button class="cv-button" onclick="window.open('asset/CV_AhmadKevinZain.pdf')">View My CV</button>
-    </div>
+        <div style="position: relative; z-index: 1; text-align: center; padding: 340px 20px; color: white;">
+            <h1 class="hover-title">Hello, I'm Ahmad Kevin Zain</h1>
+            <p class="hover-subtitle">Information Technology Student | Front End Developer</p>
+            <button class="cv-button" onclick="window.open('asset/CV_AhmadKevinZain.pdf')">View My CV</button>
+        </div>
     </header>
 
 
@@ -46,7 +54,7 @@
 
     <div class="blur-divider"></div>
 
-    <section id="skills" data-aos="fade-left" style="background-color: #111; color: #ccc; padding: 50px 20px; font-family: sans-serif;">
+    <section id="skills" data-aos="fade-left" style="background-color: #111; color: white; padding: 50px 20px; font-family: sans-serif;">
     <h2 class="hover-title"style="text-align: center; font-size: 2.5rem; margin-bottom: 30px;">⭐ My Skill</h2>
 
     <div style="display: grid; grid-template-columns: 1fr 3fr; gap: 20px; max-width: 1000px; margin: auto;">
@@ -175,7 +183,7 @@
 
     <div class="blur-divider"></div>
 
-    <section id="achievements" data-aos="fade-up" style="background-color: #111; color: #ccc; padding: 50px 20px; font-family: sans-serif;">
+    <section id="achievements" data-aos="fade-up" style="background-color: #111; color: white; padding: 50px 20px; font-family: sans-serif;">
         <h2 class="hover-title">Achievements and Certificates</h2>
         <div class="card achievement-card">
             <div class="achievement-content">

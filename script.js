@@ -19,5 +19,9 @@ function closeModal() {
     document.getElementById('imgModal').style.display = 'none';
 }
 
+function toggleMenu() {
+    const links = document.querySelector('.nav-links');
+    links.classList.toggle('show');
+}
 
 
